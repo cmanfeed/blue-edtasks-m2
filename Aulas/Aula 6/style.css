@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#menu-opcoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 50px;
+    background-color:beige;
+}
+
+.botao-pedido{
+    cursor: pointer;
+    padding: 20px;
+    background-color: beige;
+    border: 2px solid black;
+    transition: .3s ease-out;
+}
+
+.botao-pedido:hover{
+    background-color:darkslategrey;
+    color: white;
+}
+
+#form-pagamento{
+    background-color: aliceblue;
+    margin-left: 30px;
+    padding: 30px;
+    height: 40vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#meios-pagamento input{
+    margin-left: 15px;
+}
+
+.botao-submeter{
+    margin-top: 40px;
+    padding: 7px;
+}

@@ -3,117 +3,269 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    font-family: 'Poppins';
+html{
+    scroll-behavior: smooth;
 }
 
-.container{
-    margin-left: 20%;
-    margin-right: 20%;
+.margins{
+    margin-left: 16%;
+    margin-right: 16%;
 }
 
-header .container{
+header{
+    background-color: #edf6f9;
+    color: #006d77;
+}
+
+#navbar{
+    height: 85px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem;
+    border-bottom: .2px solid #006d77;
 }
 
-nav a {
+#navbar h2 a{
+    font-size: 1.6rem;
     text-decoration: none;
+}
+
+#navbar h2:hover{
+    color: #e29578;
+}
+
+#navbar h2 a:visited{
+    color: inherit;
+}
+
+#navbar-links a{
     font-weight: 500;
-    margin-left: 50px;
+    text-decoration: none;
+    padding: 20px;
 }
 
-#banner {
-    margin: 8rem 0;
+#navbar-links a:hover{
+    background-color: #e29578;
 }
 
-#banner .container{
+#navbar-links a:visited{
+  color: inherit;
+}
+
+#home-area{
+    background-color: #edf6f9;
+    color: #006d77;
+}
+
+#home{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 7rem 0;
 }
 
-#icons {
+#home-icons{
     display: flex;
     flex-direction: column;
-    padding: 4rem .9rem;
+    padding: 4rem .2rem;
 }
 
-#icons i{
+#home-icons i:hover{
+    color: #e29578;
+}
+
+#home-icons a:visited{
+    color: inherit;
+}
+
+#home-icons i{
     font-size: 30px;
-    margin: 1rem;
+    margin-bottom: 30px;
 }
 
-#texto-principal {
+#home-present{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
-#texto-principal h1 {
-    font-size: 3em;
+#home-present h1{
+    font-size: 3rem;
     margin-bottom: 3%;
 }
 
-#texto-principal h1 span {
-    background-color: black;
-    color: white;
+#home-present h1 span{
+    color: #e29578;
 }
 
-#banner img{
-    border-radius: 25px;
+#home-present p{
+    font-weight: 500;
+    color: #e29578;
 }
 
-#sobre {
-    display: flex;
-    flex-direction: column;
-    margin: 6rem 0;
+#profile-pic{
+    width: 25%;
+    height: 25%;
+    border-radius: 2px;
 }
 
-#sobre h2 {
-    font-size: 2em;
-    margin-bottom: 3%;
+#about-area{
+    background-color: #ffddd2;
+    color: #006d77;
 }
 
-#sobre p {
-    line-height: .35in;
+#about{
+    padding: 7rem 0;
 }
 
-#hobbies{
-    margin: 6rem 0;
+#about h2{
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 6%;
 }
 
-#hobbies .container{
+#about-cards{
     display: flex;
     justify-content: space-around;
 }
 
-.hobbies-title{
-    font-size: 2rem;
-    text-align: center;
-    margin-right: 1rem;
-    writing-mode:vertical-lr;
-    text-orientation:upright;
-    letter-spacing: -17px;
+#about-cards div{
+    height: 13vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#hobbies .container div{
+#about-cards div i{
+    font-size: 3rem;
+    margin-bottom: 3%;
+}
+
+#about-cards div p{
+    font-size: .85rem;
+}
+
+#hobbies-area{
+    background-color: #edf6f9;
+    color: #006d77;
+}
+
+#hobbies{
+   padding: 5rem 0; 
+}
+
+#hobbies h2{
+    font-size: 2.3em;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+#hobbies-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+#hobbies-cards div{
     padding: 2rem;
     margin: .5rem;
-    border-style: solid;
-    border-width: 5px;
-    border-image: linear-gradient(45deg, #00C853, #B2FF59) 1;
+    width: 25%;
+    border: 1.5px solid #006d77;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hobbies-cards div i{
+    font-size: 3rem;
+    margin-bottom: 7%;
+}
+
+#projects-area{
+    background-color: #006d77;
+    color: #edf6f9;
+}
+
+#projects{
+    padding: 4rem 0;
+}
+
+#projects h2{
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 3%;
+}
+
+#projects-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#projects-cards p{
+    font-size: .85rem;
+}
+
+#projects-cards .pcard{
+    width: 100%;
+    margin: 0 2rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-icon{
+    font-size: 6rem;
+    padding: 2rem 0 2rem 0;
+}
+
+#projects-cards .project-description{
+    padding-bottom: 2rem;
+}
+
+.project-language-actions{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.languages-icons i{
+    margin: 3px;
+}
+
+.language-icon{
+    color: #edf6f9;
+    font-size: 1.5rem;
+}
+
+.project-link{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 500;
+    color: #ffddd2;
+}
+
+.project-link a{
+    text-decoration: none;
+}
+
+.project-link a{
+    color: inherit;
+}
+
+#skills-area{
+    background-color: #ffddd2;
+    color: #006d77;
 }
 
 #skills{
-    margin: 6rem 0;
-}
-
-#skills .container{
+    padding: 5rem 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -125,71 +277,63 @@ nav a {
 
 #skills p{
     padding: 0 2rem .5rem 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
-    border-bottom: 3px solid #00C853;
+    border-bottom: 3px solid #edf6f9;
 }
 
-#contato .container{
+#contact-area{
+    background-color: #edf6f9;
+}
+
+
+#contact{
+    padding: 3rem 0;
     display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
+    justify-content: center;
 }
 
-.informacoes-contato i{
-    font-size: 30px;
-    margin: 1rem;
-}
-
-form{
-    padding: 2rem 6rem 3rem 6rem;
-    /* border: 5px solid #B2FF59; */
-    border-radius: 10px;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06)
-}
-
-form h3{
+.form h3{
+    color: #006d77;
     font-size: 1.8rem;
     text-align: center;
-    margin: 2rem 0;
+    margin-bottom: 2rem;
 }
 
-form label{
-    display: inline-block;
-    width: 7rem;
+.form label{
+    color: #006d77;
+    font-size: .85rem;
+    width: 5rem;
 }
 
-form input,textarea{
-    width:100%;
-    height: 40px;
+.form input, textarea{
+    padding: 5px;
+    width:97%;
     margin:10px 0;
-    background-color: #fafafa;
-    border:0;
-    box-shadow:0 0 4px rgba(0,0,0,0.3);
-    transition: .3s box-shadow;
+    background-color: #edf6f9;
+    border:1px solid #83c5be;
+    border-radius: 5px;
 }
 
-form textarea{
-    height: 80px;
-}
-
-form div{
-    margin-top: 1rem;
+.form textarea{
+    height: 90px;
 }
 
 .button-area{
-    margin-left: 5.3rem;
-    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 form button{
-    padding: 1rem;
+    padding: .8rem 1.2rem;
     border: none;
-    border-radius: 2px;
-    background-color: black;
-    color: white;
+    border-radius: 20px;
+    background-color: #e29578;
+    color: #edf6f9;
     font-family: "Poppins";
+    font-weight: 500;
     font-size: 1rem;
 }
 

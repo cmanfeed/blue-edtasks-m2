@@ -11,115 +11,151 @@
 
 <body>
     <header>
-        <div class="container">
-            <h2>CM.</h2>
-            <nav>
+        <div id="navbar" class="margins">
+            <h2><a href="">CM.</a></h2>
+            <nav id="navbar-links">
                 <a href="">Home</a>
-                <a href="">About Me</a>
+                <a href="">Background</a>
                 <a href="">Hobbies</a>
+                <a href="">Projetos</a>
                 <a href="">Skills</a>
-                <a href="">Projects</a>
-                <a href="">TalkWithMe</a>
+                <a href="">Contato</a>
             </nav>
         </div>
     </header>
 
-    <section id="banner">
-        <div class="container">
-            <div id="icons">
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-github"></i>
-                <i class="fab fa-facebook"></i>
+    <section id="home-area">
+        <div id="home" class="margins">
+            <div id="home-icons">
+                <a href="https://www.linkedin.com/in/caio-manfredini/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/cmanfeed" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/caio.manfredini/" target="_blank"><i class="fab fa-facebook"></i></a>
             </div>
 
-            <div id="texto-principal">
-                <h1>Oi! Meu nome é <br> <span>Caio Manfredini</span></h1>
-                <span>Desenvolvedor Full Stack Jr.</span>
+            <div id="home-present">
+                <h1>Desenvolvedor<br>Fullstack<span>Jr.</span></h1>
+                <p>Em desenvolvimento, ainda estou penando um bocado estudando, rs.</p>
             </div>
 
-            <img src="imgs/profile.jpg" width="30%" alt="Foto de Perfil">
+            <img id="profile-pic" src="imgs/profile.jpg" alt="Foto de Perfil">
         </div>
     </section>
 
-    <section id="sobre">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p>
-                Olá amigos! Bom dia, boa tarde e boa noite. Meu nome é Caio Manfredini e sou estudante universitário de
-                Ciência da Computação pela Universidade Federal do Maranhão (UFMA). Além disso, também sou Bluemer!
-                (Estudante da Blue EdTech)
+    <section id="about-area">
+        <div id="about" class="margins">
+            <h2>Background</h2>
+            <div id="about-cards">
+                <div>
+                    <i class="fas fa-university"></i>
+                    <h3>Universidade Federal do Maranhão</h3>
+                    <p>Bacharelado em Ciência da Computação</p>
+                </div>
 
-                Durante minha trajetória acadêmica universitária tive bastante contato com a área de Machine Learning e
-                Visão Computacional. Apesar do conhecimento aprofundado, ultimamente optei por transicionar meus estudos
-                para outra área; Desenvolvimento Web Full Stack. Sou bastante aficionado por templates e design e tenho
-                me
-                esforçado para entender bastante do mundo do front-end, sem deixar de lado alguns conceitos do back-end.
-                A
-                Blue Edtech tem me ajudado bastante a conquistar meus objetivos e espero que tenhamos uma relação
-                duradoura,
-                tanto no quesito docente quanto com os novos amigos de diversos estados que conquistei durante minha
-                estadia. No mais, bem vindo ao Meu Portfólio!
-            </p>
-        </div>
-    </section>
-
-    <section id="hobbies">
-        <div class="container">
-            <h2 class="hobbies-title">HOBBIES</h2>
-            <div>
-                <h3>Instrumentos Musicais</h3>
-                <p>Quer bater um papo sobre música? É comigo mesmo! Sou autodidata em aprender instrumentos. Sei tocar
-                    Violão, Cavaquinho, Ukulele, Guitarra, Teclado e Cajón. Caso não saiba o que é Cajón, dê uma
-                    pesquisada.
-                    É um instrumento de ritmo que é o máximo de tocar. Diversão garantida.</p>
-            </div>
-
-            <div>
-                <h3>Livros Clássicos</h3>
-                <p>Sou também um colecionador e leitor de livros antigos. Minhas edições favoritas são da Antofágica e
-                    Editora Zahar. Lá tem umas edições lindas de morrer! Meu livro favorito é Rei Arthur e os Cavaleiros
-                    da
-                    Távola Redonda de Howard Pyke. Minha série de livros favorita são as história do famoso Sherlock
-                    Holmes
-                    do Sir. Arthur Conan Doyle. Sonho em um dia ter a coleção completa. Esse dia chegará, amém.</p>
-            </div>
-
-            <div>
-                <h3>Filmes & Séries!</h3>
-
-                <p>Conte comigo para assistir um bom Netflix. Entretanto, meu gosto é meio esquisito. O filme tem que me
-                    fazer refletir ou ter uma mensagem bastante peculiar para me entreter. Série favorita: The Office.
-                    Filme
-                    favorito: Uma Questão de Tempo (e olha que não gosto de romance, mas esse marcou meu coração).</p>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h3>BlueEdTech</h3>
+                    <p>Full-Stack Web Development</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="skills">
-        <div class="container">
+    <section id="hobbies-area">
+        <div id="hobbies" class="margins">
+            <h2>Hobbies</h2>
+            <div id="hobbies-cards">
+                <div>
+                    <i class="fas fa-guitar"></i>
+                    <h3>Instrumentos & Música</h3>
+                </div>
+
+                <div>
+                    <i class="fas fa-book"></i>
+                    <h3>Livros</h3>
+                </div>
+
+                <div>
+                    <i class="fas fa-film"></i>
+                    <h3>Filmes & Séries!</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-area">
+        <div id="projects" class="margins">
+            <h2>Projetos</h2>
+            <div id="projects-cards">
+                <div class="pcard">
+                    <h4>Rock, Paper, Scissors, Lizard, Spock!</h4>
+                    <i class="fas fa-hand-spock project-icon"></i>
+                    <p class="project-description">Escolha a quantidade de rodadas e jogue contra o computador! Projeto
+                        desenvolvido para obtenção
+                        da 2º Nota no 1º Módulo da BlueEdTech.</p>
+                    <div class="project-language-actions">
+                        <i class="fab fa-python language-icon"></i>
+                        <div class="project-link">
+                            <p>Acessar</p>
+                            <a href="https://github.com/cmanfeed/blue-edtasks-m1/blob/master/Projetos/projeto_02.py"
+                                target="_blank"><i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <h4>Carmen Sandiego FI Game</h4>
+                    <i class="fas fa-user-secret project-icon"></i>
+                    <p class="project-description">Resgate seus amigos nesse jogo de Ficção Interativa no Terminal
+                        baseado no filme "Carmen Sandiego: Roubar ou Não eis a questão".</p>
+                    <div class="project-language-actions">
+                        <i class="fab fa-python language-icon"></i>
+                        <div class="project-link">
+                            <p>Acessar</p>
+                            <a href="https://github.com/joaodath/projetocarmen" target="_blank"> <i
+                                    class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <h4>Netflix Clone</h4>
+                    <i class="fas fa-ticket-alt project-icon"></i>
+                    <p class="project-description">Clone do Site da Netflix feito durante o bootcamp MRV Front End SPA
+                        disponibilizado pela Digital Innovation One (DIO).
+                    </p>
+                    <div class="project-language-actions">
+                        <div class="languages-icons">
+                            <i class="fab fa-html5 language-icon"></i>
+                            <i class="fab fa-css3-alt language-icon"></i>
+                            <i class="fab fa-js-square language-icon"></i>
+                        </div>
+                        <div class="project-link">
+                            <p>Acessar</p>
+                            <a href="https://github.com/cmanfeed/mrv-front-end-bootcamp/tree/main/P1%20-%20Netflix%20Clone"
+                                target="_blank"><i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills-area">
+        <div id="skills" class="margins">
             <h2>Skills {</h2>
-            <div class="skill">
-                <p>Python</p>
-            </div>
+            <p>Python</p>
             <p>HTML5</p>
             <p>CSS3</p>
             <p>JavaScript</p>
         </div>
     </section>
 
-    <section id="contato">
-        <div class="container">
-            <div class="informacoes-contato">
-                <i class="fas fa-phone-square-alt"></i>
-                <i class="fas fa-envelope-square"></i>
-            </div>
+    <section id="contact-area">
+        <div id="contact" class="margins">
             <form class="form" action="/">
-                <h3>TalkWithMe</h3>
+                <h3>Mande uma mensagem</h3>
                 <div>
                     <label for="nome">Nome</label>
                     <input id="nome" type="text">
-                </div>
-                <div>
                     <label for="email">Email</label>
                     <input id="email" type="email">
                 </div>
@@ -128,7 +164,7 @@
                     <textarea id="msg" cols="30" rows="10"></textarea>
                 </div>
                 <div class="button-area">
-                    <button>Enviar mensagem</button>
+                    <button>Enviar</button>
                 </div>
             </form>
         </div>
