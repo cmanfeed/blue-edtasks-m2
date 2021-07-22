@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <title>ToDo List</title>
+</head>
+
+<body>
+    <header>
+        <h1>{{ nomepage }}</h1>
+        <form action="/nova" method="POST">
+            <label for="task">Tarefa:</label>
+            <input name="task" type="text">
+            <button type="submit">Registrar</button>
+        </form>
+    </header>
+    <section>
+        <h2>O que devo fazer?</h2>
+        <ol>
+            {% for task in tks %}
+            <li class="task">{{ task }}</li>
+            {% endfor %}
+        </ol>
+    </section>
+    <script src="../static/js/script.js"></script>
+</body>
+
+</html>
