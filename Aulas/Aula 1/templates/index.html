@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
 
     <title>Meu Portfólio</title>
 </head>
@@ -37,7 +37,7 @@
                 <p>Em desenvolvimento, ainda estou penando um bocado estudando, rs.</p>
             </div>
 
-            <img id="profile-pic" src="imgs/profile.jpg" alt="Foto de Perfil">
+            <img id="profile-pic" src="../static/imgs/profile.jpg" alt="Foto de Perfil">
         </div>
     </section>
 
@@ -150,20 +150,20 @@
 
     <section id="contact-area">
         <div id="contact" class="margins">
-            <form class="form" action="/">
+            <form class="form" action="/contact" method="POST">
                 <h3>Mande uma mensagem</h3>
                 <div>
                     <label for="nome">Nome</label>
-                    <input id="nome" type="text">
+                    <input id="nome" type="text" name="name">
                     <label for="email">Email</label>
-                    <input id="email" type="email">
+                    <input id="email" type="email" name="subject">
                 </div>
                 <div>
                     <label for="msg">Mensagem</label>
-                    <textarea id="msg" cols="30" rows="10"></textarea>
+                    <textarea id="msg" cols="30" rows="10" name="content"></textarea>
                 </div>
                 <div class="button-area">
-                    <button>Enviar</button>
+                    <button type="submit">Enviar</button>
                 </div>
             </form>
         </div>
