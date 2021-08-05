@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.margins{
+    margin-left: 16%;
+    margin-right: 16%;
+}
+
+header{
+    background-color: #edf6f9;
+    color: #006d77;
+}
+
+#navbar{
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .2px solid #006d77;
+}
+
+#navbar h2 a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+#navbar h2:hover{
+    color: #e29578;
+}
+
+#navbar h2 a:visited{
+    color: inherit;
+}
+
+#navbar-links a{
+    font-weight: 500;
+    text-decoration: none;
+    padding: 20px;
+}
+
+#navbar-links a:hover{
+    background-color: #e29578;
+}
+
+#navbar-links a:visited{
+  color: inherit;
+}
+
+#home-area{
+    background-color: #edf6f9;
+    color: #006d77;
+}
+
+#home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem 0;
+}
+
+#home-icons{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem .2rem;
+}
+
+#home-icons i:hover{
+    color: #e29578;
+}
+
+#home-icons a:visited{
+    color: inherit;
+}
+
+#home-icons i{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#home-present{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home-present h1{
+    font-size: 3rem;
+    margin-bottom: 3%;
+}
+
+#home-present h1 span{
+    color: #e29578;
+}
+
+#home-present p{
+    font-weight: 500;
+    color: #e29578;
+}
+
+#profile-pic{
+    width: 25%;
+    height: 25%;
+    border-radius: 2px;
+}
+
+#background-area{
+    background-color: #ffddd2;
+    color: #006d77;
+}
+
+#background{
+    padding: 7rem 0;
+}
+
+#background h2{
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 6%;
+}
+
+#background-cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+#background-cards div{
+    height: 13vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#background-cards div i{
+    font-size: 3rem;
+    margin-bottom: 3%;
+}
+
+#background-cards div p{
+    font-size: .85rem;
+}
+
+#hobbies-area{
+    background-color: #edf6f9;
+    color: #006d77;
+}
+
+#hobbies{
+   padding: 5rem 0; 
+}
+
+#hobbies h2{
+    font-size: 2.3em;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+#hobbies-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+#hobbies-cards div{
+    padding: 2rem;
+    margin: .5rem;
+    width: 25%;
+    border: 1.5px solid #006d77;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hobbies-cards div i{
+    font-size: 3rem;
+    margin-bottom: 7%;
+}
+
+#projects-area{
+    background-color: #006d77;
+    color: #edf6f9;
+}
+
+#projects{
+    padding: 4rem 0;
+}
+
+#projects h2{
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 3%;
+}
+
+#projects-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#projects-cards p{
+    font-size: .85rem;
+}
+
+#projects-cards .pcard{
+    width: 100%;
+    margin: 0 2rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-icon{
+    font-size: 6rem;
+    padding: 2rem 0 2rem 0;
+}
+
+#projects-cards .project-description{
+    padding-bottom: 2rem;
+}
+
+.project-language-actions{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.languages-icons i{
+    margin: 3px;
+}
+
+.language-icon{
+    color: #edf6f9;
+    font-size: 1.5rem;
+}
+
+.project-link{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 500;
+    color: #ffddd2;
+}
+
+.project-link a{
+    text-decoration: none;
+}
+
+.project-link a{
+    color: inherit;
+}
+
+#skills-area{
+    background-color: #ffddd2;
+    color: #006d77;
+}
+
+#skills{
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#skills h2{
+    font-size: 50px;
+}
+
+#skills p{
+    padding: 0 2rem .5rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-bottom: 3px solid #edf6f9;
+}
+
+#contact-area{
+    background-color: #edf6f9;
+}
+
+
+#contact{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.form h3{
+    color: #006d77;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form label{
+    color: #006d77;
+    font-size: .85rem;
+    width: 5rem;
+}
+
+.form input, textarea{
+    padding: 5px;
+    width:97%;
+    margin:10px 0;
+    background-color: #edf6f9;
+    border:1px solid #83c5be;
+    border-radius: 5px;
+}
+
+.form textarea{
+    height: 90px;
+}
+
+.button-area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form button{
+    cursor: pointer;
+    padding: .8rem 1.2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #e29578;
+    color: #edf6f9;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+form button:hover{
+    background-color: #006d77;
+    color: #edf6f9;
+    transition: .1s ease;
+}
+
+footer{
+    background-color: black;
+    padding: 5rem;
+}

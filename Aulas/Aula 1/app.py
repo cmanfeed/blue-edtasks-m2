@@ -1,7 +1,19 @@
 from flask import Flask, render_template, request, redirect
+from flask_mail import Mail, Message
 from send_mail import send_email
 
 app = Flask(__name__)
+
+mail_settings = {
+    "MAIL_SERVER": 'smtp.gmail.com',
+    "MAIL_PORT": 465,
+    "MAIL_USE_TLS": False,
+    "MAIL_USE_SSL": True,
+    "MAIL_USERNAME": 'seuemail@gmail.com',
+    "MAIL_PASSWORD": 'Suasenha'
+}
+
+app.config.update(mail_settings)
 
 
 @app.route('/')

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <title>Meu Portfólio</title>
+</head>
+
+<body>
+    <header>
+        <div id="navbar" class="margins">
+            <h2><a href="">CM.</a></h2>
+            <nav id="navbar-links">
+                <a href="">Home</a>
+                <a href="">Background</a>
+                <a href="">Hobbies</a>
+                <a href="">Projetos</a>
+                <a href="">Skills</a>
+                <a href="">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home-area">
+        <div id="home" class="margins">
+            <div id="home-icons">
+                <a href="https://www.linkedin.com/in/caio-manfredini/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/cmanfeed" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/caio.manfredini/" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+
+            <div id="home-present">
+                <h1>Desenvolvedor<br>Fullstack<span>Jr.</span></h1>
+                <p>Em desenvolvimento, ainda estou penando um bocado estudando, rs.</p>
+            </div>
+
+            <img id="profile-pic" src="../static/imgs/profile.jpg" alt="Foto de Perfil">
+        </div>
+    </section>
+
+    <section id="background-area">
+        <div id="background" class="margins">
+            <h2>Background</h2>
+            <div id="background-cards">
+                <div>
+                    <i class="fas fa-university"></i>
+                    <h3>Universidade Federal do Maranhão</h3>
+                    <p>Bacharelado em Ciência da Computação</p>
+                </div>
+
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h3>BlueEdTech</h3>
+                    <p>Full-Stack Web Development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies-area">
+        <div id="hobbies" class="margins">
+            <h2>Hobbies</h2>
+            <div id="hobbies-cards">
+                <div>
+                    <i class="fas fa-guitar"></i>
+                    <h3>Instrumentos & Música</h3>
+                </div>
+
+                <div>
+                    <i class="fas fa-book"></i>
+                    <h3>Livros</h3>
+                </div>
+
+                <div>
+                    <i class="fas fa-film"></i>
+                    <h3>Filmes & Séries!</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-area">
+        <div id="projects" class="margins">
+            <h2>Projetos</h2>
+            <div id="projects-cards">
+                <div class="pcard">
+                    <h4>Rock, Paper, Scissors, Lizard, Spock!</h4>
+                    <i class="fas fa-hand-spock project-icon"></i>
+                    <p class="project-description">Escolha a quantidade de rodadas e jogue contra o computador! Projeto
+                        desenvolvido para obtenção
+                        da 2º Nota no 1º Módulo da BlueEdTech.</p>
+                    <div class="project-language-actions">
+                        <i class="fab fa-python language-icon"></i>
+                        <div class="project-link">
+                            <p>Acessar</p>
+                            <a href="https://github.com/cmanfeed/blue-edtasks-m1/blob/master/Projetos/projeto_02.py"
+                                target="_blank"><i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <h4>Carmen Sandiego FI Game</h4>
+                    <i class="fas fa-user-secret project-icon"></i>
+                    <p class="project-description">Resgate seus amigos nesse jogo de Ficção Interativa no Terminal
+                        baseado no filme "Carmen Sandiego: Roubar ou Não eis a questão".</p>
+                    <div class="project-language-actions">
+                        <i class="fab fa-python language-icon"></i>
+                        <div class="project-link">
+                            <p>Acessar</p>
+                            <a href="https://github.com/joaodath/projetocarmen" target="_blank"> <i
+                                    class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <h4>Netflix Clone</h4>
+                    <i class="fas fa-ticket-alt project-icon"></i>
+                    <p class="project-description">Clone do Site da Netflix feito durante o bootcamp MRV Front End SPA
+                        disponibilizado pela Digital Innovation One (DIO).
+                    </p>
+                    <div class="project-language-actions">
+                        <div class="languages-icons">
+                            <i class="fab fa-html5 language-icon"></i>
+                            <i class="fab fa-css3-alt language-icon"></i>
+                            <i class="fab fa-js-square language-icon"></i>
+                        </div>
+                        <div class="project-link">
+                            <p>Acessar</p>
+                            <a href="https://github.com/cmanfeed/mrv-front-end-bootcamp/tree/main/P1%20-%20Netflix%20Clone"
+                                target="_blank"><i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills-area">
+        <div id="skills" class="margins">
+            <h2>Skills {</h2>
+            <p>Python</p>
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>JavaScript</p>
+        </div>
+    </section>
+
+    <section id="contact-area">
+        <div id="contact" class="margins">
+            <form class="form" action="/contact" method="POST">
+                <h3>Mande uma mensagem</h3>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input id="nome" type="text" name="name">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email">
+                </div>
+                <div>
+                    <label for="msg">Mensagem</label>
+                    <textarea id="msg" cols="30" rows="10" name="content"></textarea>
+                </div>
+                <div class="button-area">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/d70dfaf972.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
